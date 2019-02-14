@@ -18,18 +18,12 @@
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
   <style>
-  .navbar-fixed-top {
-  position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-    }
-  .navbar-fixed-bottom, {
-    right: 0;
-    left: 0;
-    z-index: 1030;
-    }
-    .gallery-title
+
+  .navbar-fixed-bottom, .navbar-fixed-top {
+    position: relative;
+}
+
+  .gallery-title
 {
     font-size: 36px;
     color: #42B32F;
@@ -403,7 +397,7 @@
       </button>
 
 
-          <a class="navbar-brand" href="#">
+          <a style="font-size:1.5vw;" class="navbar-brand" href="#">
             <span>
             <img src="img/CNTGlobal_logo-small30px.png" alt=""></span>CNT GLOBAL SHANGHAI</a>
 
@@ -435,14 +429,14 @@
     <li data-target="#myCarousel" data-slide-to="7" ></li>
     <li data-target="#myCarousel" data-slide-to="8" ></li>
   </ol>
-    <div class="carousel carousel-inner" role="listbox">
+    <div class="carousel-inner" role="listbox">
       <div class="item active">
         <img class="img-responsive" src="img/logo-carousel.png" alt="">
       </div>
       <div class="item ">
         <img class="img-responsive" src="img/ls-12.jpg" alt="">
         <div class="carousel-caption">
-          <h1>Get to know CNT GLOBAL</h1>
+          <h1 style="font-size:4vw;">Get to know CNT GLOBAL</h1>
           <button type="button" name="button" class="btn btn-default">Contact Us</button>
         </div>
       </div>
