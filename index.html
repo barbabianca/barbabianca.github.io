@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CNT Global</title>
   <base href="#" target="_blank">
   <meta charset="utf-8">
@@ -10,10 +11,12 @@
   <link rel="stylesheet" href="bootstrap-3.4.0-dist/css/bootstrap.min.css" id="bootstrap-css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="bootstrap-3.4.0-dist/js/bootstrap.min.js"></script>
-  <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
   <script src="bootstrap-3.4.0-dist/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
@@ -66,7 +69,7 @@
     color: white;
 }
 
-.port-image
+.port
 {
     width: 100%;
 }
@@ -80,6 +83,7 @@
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
       color: #818181;
+      
 
   }
   h2 {
@@ -127,7 +131,7 @@
       margin-bottom: 10px;
   }
   .carousel-control.right, .carousel-control.left {
-      background-image: none;
+      background: none;
       color: #fff;
   }
   .carousel-indicators li {
@@ -384,11 +388,16 @@
   width:100%;
   position:absolute;
   }
+  {
+    width: 350px;
+    height: 350px;
+  }
+  
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -398,14 +407,14 @@
       </button>
 
 
-          <a style="font-size:1.5vw;" class="navbar-brand" href="#">
+          <a style="font-size:1.5vw;" class="navbar-brand" href="#myPage">
             <span>
-            <img src="img/CNTGlobal_logo-small30px.png" alt=""></span>CNT GLOBAL SHANGHAI</a>
+            <img src="img/CNTGlobal_logo-small30px.png" alt=""></span> CNT GLOBAL SHANGHAI</a>
 
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#myCarousel">HOME</a></li>
+        <li class="active"><a href="#myPage">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES</a></li>
         <li><a href="#products">PRODUCTS</a></li>
@@ -418,7 +427,7 @@
 
 
 
-<div id="myCarousel" style="object-fit: cover;overflow: hidden;";padding:50px 0px;" class="carousel slide text-center" data-ride="carousel">
+<div id="myCarousel" style="object-fit: cover;overflow: hidden;" style="padding:50px 0px;" class="carousel slide text-center" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1" ></li>
@@ -437,7 +446,7 @@
       <div class="item ">
         <img class="img-responsive" src="img/ls-12.jpg" alt="">
         <div class="carousel-caption">
-          <h1 style="font-size:4vw;">Get to know CNT GLOBAL</h1>
+          <h1 style="font-size:4vw;text-shadow: 0px 4px 3px black;">Get to know CNT GLOBAL</h1>
           <button type="button" name="button" class="btn btn-default">Contact Us</button>
         </div>
       </div>
@@ -624,7 +633,7 @@
 <div id="products" class="container-fluid text-center">
   <h2>PRODUCTS</h2>
   <h4>Gallery</h4>
-
+</div>
   <div id="products" class="container flex">
       <div align="center">
             <button class="btn btn-default filter-button" data-filter="all">All PRODS</button>     
@@ -639,7 +648,7 @@
 
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter rubberhose">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/hose.png" width="350" height="350" alt="">
+                <img class="img-responsive image" src="img/hose.png">
                 <div class="overlay">
                    <h2>EN 853 R1</h2>
                    <a class="info" href="#">link here</a>
@@ -648,7 +657,7 @@
         </div>
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter seals">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/TKR-Oil-Seals.jpg" width="350" height="350" alt="">
+                <img class="img-responsive" src="img/TKR-Oil-Seals.jpg">
                 <div class="overlay">
                    <h2>TC OIL SEAL</h2>
                    <a class="info" href="mailto:cntglobal@cntseals.com">Send mail</a>
@@ -657,7 +666,7 @@
         </div>
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter seals">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/O-Ring-Seal-Kits.jpg" width="350" height="350" alt="">
+                <img class="img-responsive " src="img/O-Ring-Seal-Kits.jpg">
                 <div class="overlay">
                    <h2>O-RING KITS</h2>
                    <a class="info" href="mailto:cntglobal@cntseals.com">Send mail</a>
@@ -666,7 +675,7 @@
         </div>
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter seals">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/wiper-seal-02.png" width="350" height="350" alt="">
+                <img class="img-responsive " src="img/wiper-seal-02.png">
                 <div class="overlay">
                    <h2>WIPER RING</h2>
                    <a class="info" href="mailto:cntglobal@cntseals.com">Send mail</a>
@@ -675,7 +684,7 @@
         </div>
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter seals">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/guidestrip.jpg" width="350" height="350" alt="">
+                <img class="img-responsive" src="img/guidestrip.jpg">
                 <div class="overlay">
                    <h2>GUIDE STRIP</h2>
                    <a class="info" href="mailto:cntglobal@cntseals.com">Send mail</a>
@@ -684,7 +693,7 @@
         </div>
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter seals">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/rod-seal.jpg" width="350" height="350" alt="">
+                <img class="img-responsive" src="img/rod-seal.jpg">
                 <div class="overlay">
                    <h2>ROD SEAL</h2>
                    <a class="info" href="mailto:cntglobal@cntseals.com">Send mail</a>
@@ -693,7 +702,7 @@
         </div>
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter motors">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/gear-motor1.png" width="350" height="350" alt="">
+                <img class="img-responsive" src="img/gear-motor1.png">
                 <div class="overlay">
                    <h2>GEAR MOTOR</h2>
                    <a class="info" href="mailto:cntglobal@cntseals.com">Send mail</a>
@@ -702,7 +711,7 @@
         </div>
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter vanepumps">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/t6-vanepump.png" width="350" height="350" alt="">
+                <img class="img-responsive" src="img/t6-vanepump.png">
                 <div class="overlay">
                    <h2>T6 VANE PUMPS</h2>
                    <a class="info" href="mailto:cntglobal@cntseals.com">Send mail</a>
@@ -711,7 +720,7 @@
         </div>
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter motors">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/gear-motor2.png" width="350" height="350" alt="">
+                <img class="img-responsive" src="img/gear-motor2.png">
                 <div class="overlay">
                    <h2>GEAR MOTOR</h2>
                    <a class="info" href="mailto:cntglobal@cntseals.com">Send mail</a>
@@ -720,7 +729,7 @@
         </div>
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter motors">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/gear-motor3.png" width="350" height="350" alt="">
+                <img class="img-responsive" src="img/gear-motor3.png">
                 <div class="overlay">
                    <h2>GEAR MOTOR</h2>
                    <a class="info" href="mailto:cntglobal@cntseals.com">Send mail</a>
@@ -729,7 +738,7 @@
         </div>
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter castironpumps">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/p8-p9-gearpumps.png" width="350" height="350" alt="">
+                <img class="img-responsive" src="img/p8-p9-gearpumps.png">
                 <div class="overlay">
                    <h2>P8/P9 GEAR PUMPS</h2>
                    <a class="info" href="mailto:cntglobal@cntseals.com">Send mail</a>
@@ -738,7 +747,7 @@
         </div>
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter castironpumps">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/p8-p9-gearpumps2.png" width="350" height="350" alt="">
+                <img class="img-responsive" src="img/p8-p9-gearpumps2.png">
                 <div class="overlay">
                    <h2>P8/P9 GEAR PUMPS</h2>
                    <a class="info" href="mailto:cntglobal@cntseals.com">Send mail</a>
@@ -747,7 +756,7 @@
         </div>
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter castironpumps">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/p8-gearpump3.png" width="350" height="350" alt="">
+                <img class="img-responsive" src="img/p8-gearpump3.png">
                 <div class="overlay">
                    <h2>P8 GEAR PUMPS</h2>
                    <a class="info" href="mailto:cntglobal@cntseals.com">Send mail</a>
@@ -756,7 +765,7 @@
         </div>
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter alpumps">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/albody-g5-vickers-gearpump.png" width="350" height="350" alt="">
+                <img class="img-responsive" src="img/albody-g5-vickers-gearpump.png">
                 <div class="overlay">
                    <h2>G5 VICKERS GEAR PUMPS</h2>
                    <a class="info" href="mailto:cntglobal@cntseals.com">Send mail</a>
@@ -765,7 +774,7 @@
         </div>
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter vanepumps">
             <div class="hovereffect">
-                <img class="img-responsive" src="img/t6-double-vane.png" width="350" height="350" alt="">
+                <img class="img-responsive" src="img/t6-double-vane.png">
                 <div class="overlay">
                    <h2>T6 DOUBLE VANE PUMP</h2>
                    <a class="info" href="mailto:cntglobal@cntseals.com">Send mail</a>
@@ -773,7 +782,7 @@
             </div>
         </div>
     </div>
-  </div>
+  
 
 
   <div id="myCarousel2" class="carousel slide text-center" data-ride="carousel">
@@ -839,7 +848,7 @@
   </div>
 </div>
 
-<!-- Image of location/map -->
+<!-- of location/map -->
 <!--Main layout-->
 <main class=" m-0 p-0">
   <div class="container-fluid m-0 p-0">
