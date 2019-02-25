@@ -4,7 +4,7 @@
 <head>
   <!-- Theme Made By www.w3schools.com -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CNT Global</title>
+  <title>Hyrdaulics&Seals</title>
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
   <base href="#" target="_blank">
@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="jquery/jquery-3.3.1.min.js"></script>
   <script src="bootstrap-3.4.0-dist/js/bootstrap.min.js"></script>
   
   
@@ -457,12 +457,12 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
-        <h1>CNT Global means
+        <h1>CNT Global is
         <span class="txt-rotate"
             data-period="2000"
-            data-rotate='[ "quality.", "trust.", "full service.", "partnership.", "YOU!!!" ]'></h1>
+            data-rotate='[ "quality", "trust", "full service", "partnership", "YOU!!!" ]'></h1>
         </span>
-        <h2 style="padding-top: 50px;">Contact us to learn more.</h2>      
+        <h2 style="padding-top: 50px;">Contact us to learn more</h2>      
       </div>
       <div style="height:50px;" class="modal-footer">
 
@@ -545,7 +545,7 @@
         <div class="box-part text-center">
             <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
           <div class="title">
-            <a href="http://www.twitter.com"><h4>Twitter</h4></a>
+            <a href="https://twitter.com/cnt_global"><h4>Twitter</h4></a>
           </div>
          </div>
       </div>
@@ -642,7 +642,7 @@
   <br>
   <div class="row slideanim">
     <div class="col-sm-4 col-xs-6">
-      <span class="glyphicon glyphicon-remove logo-small"></span>
+      <span class="glyphicon glyphicon-search logo-small"></span>
       <h4>PRODUCT SEARCH</h4>
       <p>New product searches.</p>
     </div>
@@ -914,11 +914,28 @@
 
 <script>
 
+window.addEventListener('load', function() {
+    console.log('All assets are loaded')
+})
 
+// $(window).width();   // returns width of browser viewport
 
-$(window).on('load',function(){
-        $('#myModal').modal('show')
+// $(window).height();   // returns heightof browser viewport
+
+var width = $(window).width(); 
+var height = $(window).height(); 
+
+if ((width <= 1024  ) && (height<=768)) {
+    $(window).on('load',function(){
+          $('#myModal').modal('hide')
     })
+}
+else {
+    $(window).on('load',function(){
+        $('#myModal').modal('show')
+        //do something else
+    })
+}
 
 // window.onload=function(){
 //       modal.style.display="block";
